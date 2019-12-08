@@ -26,10 +26,27 @@ require_once("config.php");
 
 // CARREGA UM USUÁRIO USANDO O LOGIN E A SENHA
 //======================================================
+//$usuario = new Usuario();
+//$usuario->login("Jose", "9908271921974");
+//echo $usuario;
+
+// CRIANDO UM NOVO USUÁRIO - INSERT
+// ========================================
+/*
+$aluno = new Usuario("aluno2", "$$1234");
+
+$aluno->insert();
+
+echo $aluno;
+*/
 
 $usuario = new Usuario();
-$usuario->login("Jose", "9908271921974");
+
+$usuario->loadById(9);
+
+$usuario->update("professor", "#123123#");
 
 echo $usuario;
+
 
  ?>
