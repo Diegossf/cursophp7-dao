@@ -40,6 +40,9 @@ $aluno->insert();
 echo $aluno;
 */
 
+// ALTERAR UM USUÁRIO
+//======================================
+/*
 $usuario = new Usuario();
 
 $usuario->loadById(9);
@@ -47,6 +50,13 @@ $usuario->loadById(9);
 $usuario->update("professor", "#123123#");
 
 echo $usuario;
+*/
 
+$usuario = new Usuario();
+
+$usuario->loadById(4);
+$usuario->delete();
+
+echo $usuario;
 
  ?>
